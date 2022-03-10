@@ -1,0 +1,124 @@
+body {
+    background-color: white;
+    margin: 0;
+    
+
+}
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+
+}
+.header {
+    width: 100%;
+    height: 10%;
+    background-color: black;
+}
+.content {
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+ }
+
+.sideNav{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+.postContaint{
+    background-color:rgb(165, 167, 170);
+    width: 100%;
+    height: 100%;
+    display:grid;
+    justify-items:center; 
+   
+
+}
+.creatPostForm{
+    width: 70%;
+    height: 200px;
+    background-color:rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding : 10px;
+    margin-top: 5%;
+    border-radius : 10px;  
+    box-shadow: 0 0 10px gray; 
+}       
+.userImg{
+    width: 70%;
+    border-radius: 50%;
+
+}
+.UserInfo{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+
+}
+
+.userInput{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:6fr 1fr;
+}
+
+@media (max-width:700px){
+    .content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .userImg{
+        width: 50px;
+
+    }
+    .Name{
+        font-size:large;
+        margin-left: 10px;
+        margin-top: 20px;
+
+    }
+    .sideNav{
+        display: none;
+    }
+    #PostTn{
+        margin-top: 65%;
+        margin-left: 5px;
+        border-radius: 5px;
+        width: 100%;
+        
+    }
+    
+}
+#PostInbut{
+    border: none;
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0);
+} 
+.PostBtn{
+    height: 40%;
+    margin-top: 28%;
+    margin-left :5%;
+    border-radius :5px;
+    width: 70%;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    border : none;
+    background-color:rgb(233, 232, 232);
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+.PostBtn:hover{
+    background-color:black;
+    color : #fff;
+}
+
+
